@@ -1,0 +1,26 @@
+﻿.divider
+{
+  border-top: #BAE9E1 1px solid;
+  border-bottom: #BAE9E1 1px solid;
+  border-right: #BAE9E1 1px solid;
+  border-left: #BAE9E1 1px solid;
+  background-color: #BAE9E1;
+}
+
+.section
+{
+  background: #BAE9E1;
+}
+
+.button
+{
+    background: #BAE9E1;
+    color:Black;
+    border-color:#BAE9E1;
+    border-width:1px;
+}
+
+input[type=text]
+{
+  width:250px;
+}

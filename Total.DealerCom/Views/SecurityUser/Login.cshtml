@@ -1,0 +1,346 @@
+﻿<!DOCTYPE html>
+@{
+    Layout = null;    
+}
+<html lang="en" class="coming-soon">
+<head>
+    <meta charset="utf-8">
+    <title>Total Dealer Communication - Login</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+
+    <link rel='shortcut icon' type='image/x-icon' href='~/assets/img/favicon.ico' />
+
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400italic,600' rel='stylesheet' type='text/css'>
+    <link type="text/css" href="~/assets/plugins/iCheck/skins/minimal/blue.css" rel="stylesheet">
+    <link type="text/css" href="~/assets/fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link type="text/css" href="~/assets/fonts/themify-icons/themify-icons.css" rel="stylesheet">               <!-- Themify Icons -->
+    <link type="text/css" href="~/assets/css/styles.css" rel="stylesheet">
+
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries. Placeholdr.js enables the placeholder attribute -->
+    <!--[if lt IE 9]>
+        <link type="text/css" href="assets/css/ie8.css" rel="stylesheet">
+        <script type="text/javascript" src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!-- The following CSS are included as plugins and can be removed if unused-->
+
+</head>
+
+<body class="focused-form animated-content">
+
+    <div class="container">
+        <a class="login-logo"><img src="~/assets/img/total_logo_login.png"></a>
+
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="login-heading">Total Dealer Communication</h3>
+                        <h2>Please enter your login details</h2>
+                        <h5 style="color: red">@ViewBag.WrongCredentials</h5>
+                    </div>
+                    <div class="panel-body">
+                        <form class="form-horizontal" id="validate-form" action='@Url.Action("Login", "SecurityUser")' method="post" >
+                            <div class="form-group mb-md">
+                                <div class="col-xs-12">
+                                    <div class="input-group">
+                                        <span class="input-group-addon">
+                                            <i class="ti ti-user"></i>
+                                        </span>
+                                        <input type="text" class="form-control" placeholder="Username" data-parsley-minlength="6" id="userName" name="userName" required ="required">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group mb-md">
+                                <div class="col-xs-12">
+                                    <div class="input-group">
+                                        <span class="input-group-addon">
+                                            <i class="ti ti-key"></i>
+                                        </span>
+                                        <input type="password" class="form-control" id="userPassword" name="userPassword" placeholder="Password" required>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group mb-n">
+                                <div class="col-xs-12">
+                                    <a data-toggle="modal" href="#forgotPassWord" class="pull-left">Forgot password?</a>
+                                    <br />
+                                    <span class="pull-left">
+                                        <a data-toggle="modal" href="#changePassword"> Change Password</a>
+                                    </span>
+                                    <div class="checkbox-inline icheck pull-right p-n">
+                                        <label for="">
+                                            <input type="checkbox">
+                                            Remember me
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel-footer">
+                                <div class="clearfix">
+                                    <button class="btn btn-primary btn-block">Login</button>
+                                </div>
+
+                            </div>
+
+
+                        </form>
+
+                        <!-- Modal for forgot password -->
+                        <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="forgotPassWord" class="modal fade">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                        <h4 class="modal-title">Forgot Password ?</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div id="forgotSuss" style="color: green">Password has been reset, please check your email.</div>
+                                        <div id="forgotNoSuss" style="color: green">Password has been reset, please check your email.</div>
+                                        <div id="userEmpty" style="color: red">Please enter outlet number!</div>
+                                        <input type="text" placeholder="User Id (outlet number)" autocomplete="on" class="form-control placeholder-no-fix" id="userId" name="userId">
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button data-dismiss="modal" class="btn btn-default" type="button" id="cancelForgotPass">Cancel</button>
+                                        <button class="btn btn-success" type="button" id="resetPasswords" name="resetPasswords">Submit</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Modal for forgot password -->
+
+                        <!-- Modal for change password -->
+                        <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="changePassword" class="modal fade">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                        <h4 class="modal-title">Change Password</h4>
+                                        <div id="changeSuss" style="color: green">Password successfully changed, click cancel to go back to the login page.</div>
+                                        <div id="changeNoSuss" style="color: green">Password successfully changed, click cancel to go back to the login page.</div>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div id="userIdEmpty" style="color: red">Please enter outlet number!</div>
+                                        <input type="text" placeholder="User Id (outlet number)" autocomplete="on" class="form-control placeholder-no-fix" id="userIdreset" name="userIdreset">
+                                        <div id="oldPass" style="color: red">Please enter old password!</div>
+                                        <input type="password" placeholder="Old Password" autocomplete="on" class="form-control placeholder-no-fix" id="oldPassword" name="oldPassword" value="" />
+                                        <div id="newPass" style="color: red">Please enter new paswword!</div>
+                                        <input type="password" placeholder="New Password" autocomplete="on" class="form-control placeholder-no-fix" id="newPassword" name="newPassword">
+                                        <div id="confirmPass" style="color: red">Please confirm new password!</div>
+                                        <input type="password" placeholder="Confirm Password" autocomplete="on" class="form-control placeholder-no-fix" id="confirmPassword" name="confirmPassword">
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button data-dismiss="modal" class="btn btn-default" type="button" id="cancelChangePass">Cancel</button>
+                                        <button class="btn btn-success" type="button" id="changingPassword" name="changingPassword">Submit</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Modal for change password -->
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <p align="center">If you experience problems accessing the system,<br />please <a href="mailto:andiswa.gabada@total.co.za;nomusa.masombuka@total.co.za">email</a> us or call (011) 778 2070.</p>
+    </div>
+
+
+    <!-- Load site level scripts -->
+    <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script> -->
+
+    <script type="text/javascript" src="~/assets/js/jquery-1.10.2.min.js"></script> 							<!-- Load jQuery -->
+    <script type="text/javascript" src="~/assets/js/jqueryui-1.10.3.min.js"></script> 							<!-- Load jQueryUI -->
+    <script type="text/javascript" src="~/assets/js/bootstrap.min.js"></script> 								<!-- Load Bootstrap -->
+    <script type="text/javascript" src="~/assets/js/enquire.min.js"></script> 									<!-- Load Enquire -->
+
+    <script type="text/javascript" src="~/assets/plugins/velocityjs/velocity.min.js"></script>					<!-- Load Velocity for Animated Content -->
+    <script type="text/javascript" src="~/assets/plugins/velocityjs/velocity.ui.min.js"></script>
+
+    <script type="text/javascript" src="~/assets/plugins/wijets/wijets.js"></script>     						<!-- Wijet -->
+
+    <script type="text/javascript" src="~/assets/plugins/codeprettifier/prettify.js"></script> 				<!-- Code Prettifier  -->
+    <script type="text/javascript" src="~/assets/plugins/bootstrap-switch/bootstrap-switch.js"></script> 		<!-- Swith/Toggle Button -->
+
+    <script type="text/javascript" src="~/assets/plugins/bootstrap-tabdrop/js/bootstrap-tabdrop.js"></script>  <!-- Bootstrap Tabdrop -->
+
+    <script type="text/javascript" src="~/assets/plugins/iCheck/icheck.min.js"></script>     					<!-- iCheck -->
+
+    <script type="text/javascript" src="~/assets/plugins/nanoScroller/js/jquery.nanoscroller.min.js"></script> <!-- nano scroller -->
+
+    <script type="text/javascript" src="~/assets/js/application.js"></script>
+    <script type="text/javascript" src="~/assets/demo/demo.js"></script>
+    <script type="text/javascript" src="~/assets/demo/demo-switcher.js"></script>
+
+    <!-- End loading site level scripts -->
+    <!-- Load page level scripts-->
+    <!-- End loading page level scripts-->
+
+
+    <script type="text/javascript">
+
+        @*This method handles forgot password interaction with the user.*@
+        $(function () {
+            
+        $('#userEmpty').hide();
+        $('#forgotSuss').hide();
+        $('#forgotNoSuss').hide();
+
+        $('#resetPasswords').click(function () {
+
+            var idVal = $("#userId").val();
+
+            if (idVal == '') {
+                $('#userEmpty').show();
+                return;
+            }
+            else
+            {
+                $.ajax({
+                    url: '@Url.Action("ResetUserPassword", "SecurityUser")',
+                    contentType: 'application/json; charset=utf-8',
+                    async: true,
+                    processData: false,
+                    cache: false,
+                    data: JSON.stringify({ userId: idVal }),
+                    type: 'POST',
+                    dataType: "json",
+                    success: function () {
+
+                        $('#forgotNoSuss').hide();
+                        $('#forgotSuss').show();
+                        $("#userId").val("");
+                    },
+                    error: function () {
+                         
+                        $('#forgotSuss').hide();
+                        $('#forgotNoSuss').show();
+                        $("#userId").val("");
+                    }
+                })
+            }
+          
+        })
+
+        $("#cancelForgotPass").click(function () {
+            $("#userId").val("");
+            $('#userEmpty').hide();
+            $('#forgotNoSuss').hide();
+            $('#forgotSuss').hide();
+        });
+
+    });
+
+        @*This method handles change password interaction with the user.*@
+        $(function () {
+
+        $('#userIdEmpty').hide();
+        $('#newPass').hide();
+        $('#oldPass').hide();
+        $('#confirmPass').hide();
+        $('#changeSuss').hide();
+        $('#changeNoSuss').hide();
+
+        $('#changingPassword').click(function () {
+
+        var idVal = $("#userIdreset").val();
+        var oldPassVal = $("#oldPassword").val();
+        var newPassVal = $("#newPassword").val();
+        var confirmPassVal = $("#confirmPassword").val();
+
+        if (idVal == '') {
+            $('#userIdEmpty').show();
+            $('#newPass').hide();
+            $('#oldPass').hide();
+            $('#confirmPass').hide();
+
+        }
+        else if (oldPassVal == '')
+        {
+            $('#oldPass').show();
+            $('#newPass').hide();
+            $('#confirmPass').hide();
+            $('#userIdEmpty').hide();
+        }
+        else if (newPassVal == '') {
+            $('#newPass').show();
+            $('#oldPass').hide();
+            $('#confirmPass').hide();
+            $('#userIdEmpty').hide();
+        }
+        else if (confirmPassVal == '') {
+            $('#confirmPass').show();
+            $('#oldPass').hide();
+            $('#newPass').hide();
+            $('#userIdEmpty').hide();
+        }
+        else
+        {
+            $.ajax({
+                url: '@Url.Action("ChangePassword", "SecurityUser")',
+                contentType: 'application/json; charset=utf-8',
+                async: true,
+                processData: false,
+                cache: false,
+                data: JSON.stringify({ userIdreset: idVal, oldPassword: oldPassVal, newPassword: newPassVal, confirmPassword: confirmPassVal }),
+                type: 'POST',
+                dataType: "json",
+                success: function () {
+
+                    $('#changeNoSuss').hide();
+                    $('#changeSuss').show();
+                    
+                    $("#userIdreset").val("");
+                    $("#oldPassword").val("");
+                    $("#newPassword").val("");
+                    $("#confirmPassword").val("");
+
+                },
+                error: function () {
+
+                    $('#changeSuss').hide();
+                    $('#changeNoSuss').show();
+                   
+                    $("#userIdreset").val("");
+                    $("#oldPassword").val("");
+                    $("#newPassword").val("");
+                    $("#confirmPassword").val("");
+                }
+            })
+        }
+       
+        })
+
+            $("#cancelChangePass").click(function () {
+
+        $("#userIdreset").val("");
+        $("#oldPassword").val("");
+        $("#newPassword").val("");
+        $("#confirmPassword").val("");
+
+        $('#userIdEmpty').hide();
+        $('#newPass').hide();
+        $('#oldPass').hide();
+        $('#confirmPass').hide();
+        $('#changeNoSuss').hide();
+        $('#changeSuss').hide();
+
+        });
+
+    });
+
+    </script>
+
+</body>
+</html>
+
+

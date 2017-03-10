@@ -1,0 +1,46 @@
+﻿@using Total.DealerCom.Core
+@using Total.DealerCom.Core.ViewModels
+
+@model List<Menu>
+
+
+<div id="wrapper">
+    <div id="layout-static">
+
+        <div class="static-sidebar-wrapper sidebar-gray">
+            <div class="static-sidebar">
+                <div class="sidebar">
+
+
+                    <div class="widget stay-on-collapse" id="widget-sidebar">
+                        <nav role="navigation" class="widget-body">
+                            <ul class="acc-menu">
+                                <li><a href='@Url.Action("Index", "Home")'><i class="ti ti-home"></i><span>Home - Dashboard</span></a></li>
+                                @foreach (var item in Model)
+                                {
+
+                                    <li class="hasChild">
+                                        <a href="#">
+                                            <i class="ti ti-world"></i>
+                                            <span>@item.MenuCaption</span>
+                                        </a>
+
+                                        <ul class="acc-menu">
+                                            @foreach (var subItems in item.MyMenuItems)
+                                            {
+                                                <li>
+                                                    <a href="@subItems.URL">@subItems.MenuCaption</a>
+                                                </li>
+                                            }
+                                        </ul>
+
+                                    </li>
+                                }
+                            </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

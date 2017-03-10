@@ -1,0 +1,9 @@
+﻿.divider
+{
+  border-top: Black 1px solid;
+  border-bottom: Black 1px solid;
+  border-right: Black 1px solid;
+  border-left: Black 1px solid;
+  background-color: Black;
+  height:3px;
+}

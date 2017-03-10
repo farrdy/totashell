@@ -1,0 +1,42 @@
+﻿.divider
+{
+  border-top: #CDE6B7 1px solid;
+  border-bottom: #CDE6B7 1px solid;
+  border-right: #CDE6B7 1px solid;
+  border-left: #CDE6B7 1px solid;
+  background-color: #CDE6B7;
+  height: 3px;
+}
+
+.dividerLarge
+{
+  border-top: #CDE6B7 1px solid;
+  border-bottom: #CDE6B7 1px solid;
+  border-right: #CDE6B7 1px solid;
+  border-left: #CDE6B7 1px solid;
+  background-color: #CDE6B7;
+  height: 18px;
+}
+
+.section
+{
+  background: #CDE6B7;
+}
+
+.button
+{
+    background:#CDE6B7;
+    color:Black;
+    border-color:#CDE6B7;
+    border-width:1px;
+}
+
+input[type=text]
+{
+  width:250px;
+}
+
+.modalPopup 
+{
+	background-color:#F3FAEC;
+}	

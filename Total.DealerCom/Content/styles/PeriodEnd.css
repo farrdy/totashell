@@ -1,0 +1,21 @@
+﻿.divider
+{
+  border-top: #F3B6CC 1px solid;
+  border-bottom: #F3B6CC 1px solid;
+  border-right: #F3B6CC 1px solid;
+  border-left: #F3B6CC 1px solid;
+  background-color: #F3B6CC;
+}
+
+.section
+{
+  background: #F3B6CC;
+}
+
+.button
+{
+  background: #F3B6CC;
+  color:Black;
+  border-color:#F3B6CC;
+  border-width:1px;
+}

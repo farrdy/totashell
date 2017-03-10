@@ -1,0 +1,5 @@
+C:\TOTALDEALERCOM_git_repo\Total.DealerCom.Core\bin\Debug\Total.DealerCom.Core.dll
+C:\TOTALDEALERCOM_git_repo\Total.DealerCom.Core\bin\Debug\Total.DealerCom.Core.pdb
+C:\TOTALDEALERCOM_git_repo\Total.DealerCom.Core\obj\Debug\Total.DealerCom.Core.csprojResolveAssemblyReference.cache
+C:\TOTALDEALERCOM_git_repo\Total.DealerCom.Core\obj\Debug\Total.DealerCom.Core.dll
+C:\TOTALDEALERCOM_git_repo\Total.DealerCom.Core\obj\Debug\Total.DealerCom.Core.pdb

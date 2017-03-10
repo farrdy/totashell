@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B47575C2-148A-4F1B-9A46-9B20D1101C2A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Total.DealerCom.DataAccessLayer</RootNamespace>
+    <AssemblyName>Total.DealerCom.DataAccessLayer</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ExcelLibrary">
+      <HintPath>..\Dependencies\OldBin\ExcelLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Infrastructure.Server">
+      <HintPath>..\Dependencies\OldBin\Infrastructure.Server.dll</HintPath>
+    </Reference>
+    <Reference Include="Infrastructure.Shared">
+      <HintPath>..\Dependencies\OldBin\Infrastructure.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="Infrastructure.UI">
+      <HintPath>..\Dependencies\OldBin\Infrastructure.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp">
+      <HintPath>..\Dependencies\OldBin\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=4.1.0.0, Culture=neutral, PublicKeyToken=e44a2bc38ed2c13c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Dependencies\OldBin\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data">
+      <HintPath>..\Dependencies\OldBin\Microsoft.Practices.EnterpriseLibrary.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ObjectBuilder2">
+      <HintPath>..\..\..\..\Desktop\Dependencies\OldBin\Microsoft.Practices.ObjectBuilder2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation">
+      <HintPath>..\Dependencies\OldBin\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity">
+      <HintPath>..\..\..\..\Desktop\Dependencies\OldBin\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Interception">
+      <HintPath>..\Dependencies\OldBin\Microsoft.Practices.Unity.Interception.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.ServiceLocatorAdapter">
+      <HintPath>..\Dependencies\OldBin\Microsoft.Practices.Unity.ServiceLocatorAdapter.dll</HintPath>
+    </Reference>
+    <Reference Include="MigraDoc.DocumentObjectModel">
+      <HintPath>..\Dependencies\OldBin\MigraDoc.DocumentObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="MigraDoc.Rendering">
+      <HintPath>..\Dependencies\OldBin\MigraDoc.Rendering.dll</HintPath>
+    </Reference>
+    <Reference Include="PdfSharp">
+      <HintPath>..\Dependencies\OldBin\PdfSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="PdfSharp.Charting">
+      <HintPath>..\Dependencies\OldBin\PdfSharp.Charting.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Unity.LifeTimeContainers">
+      <HintPath>..\Dependencies\OldBin\Unity.LifeTimeContainers.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BootStrap.cs" />
+    <Compile Include="Constants.cs" />
+    <Compile Include="DataAccess\ArticleDao.cs" />
+    <Compile Include="DataAccess\AuditDao.cs" />
+    <Compile Include="DataAccess\DealerDao.cs" />
+    <Compile Include="DataAccess\DryStockDao.cs" />
+    <Compile Include="DataAccess\EmailDao.cs" />
+    <Compile Include="DataAccess\FAQDao.cs" />
+    <Compile Include="DataAccess\GeneralChangesDao.cs" />
+    <Compile Include="DataAccess\GeneralChangesLinkDao.cs" />
+    <Compile Include="DataAccess\GeneralChangesRequestDao.cs" />
+    <Compile Include="DataAccess\GroupDao.cs" />
+    <Compile Include="DataAccess\IssueDao.cs" />
+    <Compile Include="DataAccess\LogDao.cs" />
+    <Compile Include="DataAccess\LookupDao.cs" />
+    <Compile Include="DataAccess\MailTemplateDao.cs" />
+    <Compile Include="DataAccess\MasterDataStatusDao.cs" />
+    <Compile Include="DataAccess\ProvinceDao.cs" />
+    <Compile Include="DataAccess\QuestionnaireDao.cs" />
+    <Compile Include="DataAccess\RangingDao.cs" />
+    <Compile Include="DataAccess\RecipesItemDao.cs" />
+    <Compile Include="DataAccess\RecipesRequestDao.cs" />
+    <Compile Include="DataAccess\RequesterDao.cs" />
+    <Compile Include="DataAccess\RequesterStagingDao.cs" />
+    <Compile Include="DataAccess\SupplierDao.cs" />
+    <Compile Include="DataAccess\SupplierMasterDataDao.cs" />
+    <Compile Include="DataAccess\SupplierProductDao.cs" />
+    <Compile Include="DataAccess\SupplierProductStagingDao.cs" />
+    <Compile Include="DataAccess\SupplierStagingDao.cs" />
+    <Compile Include="DataAccess\UserDao.cs" />
+    <Compile Include="DataAccess\VideoDao.cs" />
+    <Compile Include="DataMappers\UserMapper.cs" />
+    <Compile Include="Facade\ArticleFacade.cs" />
+    <Compile Include="Facade\AuditFacade.cs" />
+    <Compile Include="Facade\DealerFacade.cs" />
+    <Compile Include="Facade\EmailFacade.cs" />
+    <Compile Include="Facade\FacadeFactory.cs" />
+    <Compile Include="Facade\FAQFacade.cs" />
+    <Compile Include="Facade\GeneralChangesFacade.cs" />
+    <Compile Include="Facade\GeneralChangesLinkFacade.cs" />
+    <Compile Include="Facade\GeneralChangesRequestFacade.cs" />
+    <Compile Include="Facade\GroupFacade.cs" />
+    <Compile Include="Facade\Interfaces\IArticleFacade.cs" />
+    <Compile Include="Facade\Interfaces\IAuditFacade.cs" />
+    <Compile Include="Facade\Interfaces\IDealerFacade.cs" />
+    <Compile Include="Facade\Interfaces\IEmailFacade.cs" />
+    <Compile Include="Facade\Interfaces\IFacadeFactory.cs" />
+    <Compile Include="Facade\Interfaces\IFAQFacade.cs" />
+    <Compile Include="Facade\Interfaces\IGeneralChangesFacade.cs" />
+    <Compile Include="Facade\Interfaces\IGeneralChangesLinkFacade.cs" />
+    <Compile Include="Facade\Interfaces\IGeneralChangesRequestFacade.cs" />
+    <Compile Include="Facade\Interfaces\IGroupFacade.cs" />
+    <Compile Include="Facade\Interfaces\IIssueFacade.cs" />
+    <Compile Include="Facade\Interfaces\ILogFacade.cs" />
+    <Compile Include="Facade\Interfaces\ILookupFacade.cs" />
+    <Compile Include="Facade\Interfaces\IMailTemplateFacade.cs" />
+    <Compile Include="Facade\Interfaces\IMasterDataStatusFacade.cs" />
+    <Compile Include="Facade\Interfaces\IProvinceFacade.cs" />
+    <Compile Include="Facade\Interfaces\IQuestionnaireFacade.cs" />
+    <Compile Include="Facade\Interfaces\IRangingFacade.cs" />
+    <Compile Include="Facade\Interfaces\IRecipesItemFacade.cs" />
+    <Compile Include="Facade\Interfaces\IRecipesRequestFacade.cs" />
+    <Compile Include="Facade\Interfaces\IRequesterFacade.cs" />
+    <Compile Include="Facade\Interfaces\IRequesterStagingFacade.cs" />
+    <Compile Include="Facade\Interfaces\ISupplierFacade.cs" />
+    <Compile Include="Facade\Interfaces\ISupplierMasterDataFacade.cs" />
+    <Compile Include="Facade\Interfaces\ISupplierProductFacade.cs" />
+    <Compile Include="Facade\Interfaces\ISupplierProductStagingFacade.cs" />
+    <Compile Include="Facade\Interfaces\ISupplierStagingFacade.cs" />
+    <Compile Include="Facade\Interfaces\IUserFacade.cs" />
+    <Compile Include="Facade\Interfaces\IVideoFacade.cs" />
+    <Compile Include="Facade\IssueFacade.cs" />
+    <Compile Include="Facade\LogFacade.cs" />
+    <Compile Include="Facade\LookupFacade.cs" />
+    <Compile Include="Facade\MailTemplateFacade.cs" />
+    <Compile Include="Facade\MasterDataStatusFacade.cs" />
+    <Compile Include="Facade\ProvinceFacade.cs" />
+    <Compile Include="Facade\QuestionnaireFacade.cs" />
+    <Compile Include="Facade\RangingFacade.cs" />
+    <Compile Include="Facade\RecipesItemFacade.cs" />
+    <Compile Include="Facade\RecipesRequestFacade.cs" />
+    <Compile Include="Facade\RequesterFacade.cs" />
+    <Compile Include="Facade\RequesterStagingFacade.cs" />
+    <Compile Include="Facade\SupplierFacade.cs" />
+    <Compile Include="Facade\SupplierMasterDataFacade.cs" />
+    <Compile Include="Facade\SupplierProductFacade.cs" />
+    <Compile Include="Facade\SupplierProductStagingFacade.cs" />
+    <Compile Include="Facade\SupplierStagingFacade.cs" />
+    <Compile Include="Facade\UserFacade.cs" />
+    <Compile Include="Facade\VideoFacade.cs" />
+    <Compile Include="Infrastructure\CachingAsp.cs" />
+    <Compile Include="Infrastructure\CachingNull.cs" />
+    <Compile Include="Infrastructure\Configuration.cs" />
+    <Compile Include="Infrastructure\Infrastructure.cs" />
+    <Compile Include="Infrastructure\Interfaces\ICache.cs" />
+    <Compile Include="Infrastructure\Interfaces\IConfiguration.cs" />
+    <Compile Include="Infrastructure\Interfaces\IInfrastructure.cs" />
+    <Compile Include="Infrastructure\Interfaces\ILogger.cs" />
+    <Compile Include="Infrastructure\Interfaces\ISpecification.cs" />
+    <Compile Include="Infrastructure\LoggerNull.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Templates\Item.cs" />
+    <Compile Include="Templates\Items.cs" />
+    <Compile Include="Templates\Template.cs" />
+    <Compile Include="Utility\Conversion.cs" />
+    <Compile Include="Utility\ConvertNullable.cs" />
+    <Compile Include="Utility\DynamicControl.cs" />
+    <Compile Include="Utility\SessionScope.cs" />
+    <Compile Include="Utility\Util.cs" />
+    <Compile Include="Utility\XMLTransformer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Debug\" />
+    <Folder Include="bin\Release\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Templates\AdminClosedInstanceLetterTemplate.xslt" />
+    <Content Include="Templates\AdminCreateInstanceLetterTemplate.xslt" />
+    <Content Include="Templates\AdminRetractedInstanceLetterTemplate.xslt" />
+    <Content Include="Templates\DealerClosedInstanceLetterTemplate.xslt" />
+    <Content Include="Templates\DealerCreateInstanceLetterTemplate.xslt" />
+    <Content Include="Templates\DealerRetractedInstanceLetterTemplate.xslt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Total.DealerCom.Core\Total.DealerCom.Core.csproj">
+      <Project>{57990295-b140-4183-89c4-1c154cdf7449}</Project>
+      <Name>Total.DealerCom.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

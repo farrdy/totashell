@@ -1,0 +1,60 @@
+﻿
+@model PagedList.IPagedList<Total.DealerCom.Web.Models.IssueResultVm>
+@using PagedList.Mvc;
+ 
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<link href="~/Content/bootstrap.css" rel="stylesheet" />
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+<link href="/Content/datetimepicker.css" rel="stylesheet" />
+<script src="/Scripts/jquery-2.1.4.js"></script>
+<script src="/Scripts/plugins/moment/moment.js"></script>
+<script src="/Scripts/bootstrap.js"></script>
+<script src="/Scripts/angular.js"></script>
+<script src="/Scripts/angular-route.js"></script>
+<script src="/Scripts/angular-resource.js"></script>
+<script src="~/Scripts/angular-ui-router.js"></script>
+<script src="/Scripts/App/app.js"></script>
+<script src="/Scripts/plugins/datetimepicker/datetimepicker.js"></script>
+<script src="/Scripts/plugins/FileSave/FileSaver.min.js"></script>
+<script src="/Scripts/App/Controllers/StandingDryStock/ExportToExcel.js"></script>
+<script src="/Scripts/angular-ui/ui-bootstrap.js"></script>
+<script src="/Scripts/App/Controllers/StandingDryStock/EditStandingDryLogCtrl.js"></script>
+<script src="/Scripts/plugins/angularModal/angular-modal-service.js"></script>
+<script src="/Scripts/App/Factory/StandingLogsFactory.js"></script>
+<script src="/Scripts/App/Factory/DryListSearchFactory.js"></script>
+<script src="/Scripts/App/Directives/pager.js"></script>
+<script src="/Scripts/App/Directives/StandingDrySearch.js"></script>
+<script src="/Scripts/App/Controllers/StandingDryStock/CreateStandingDryLogs.js"></script>
+<script src="/Scripts/App/Services/StandingDryLog/StandingDryLogService.js"></script>
+<style type="text/css">
+    .panel-primary > .panel-heading {
+        background-color: #FF9800;
+        border-color: #FB8C00;
+        color: #fff3e0;
+        border: solid;
+    }
+</style>
+<div id="content" ui-view></div>
+<table>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            
+            <td>
+                @Html.DisplayFor(modelItem => item.)
+            </td>
+        </tr>
+    }
+
+</table>
+
+Page @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) of @Model.PageCount
+@Html.PagedListPager(Model, page => Url.Action("Index", new { page }))
+
+

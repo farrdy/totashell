@@ -1,0 +1,150 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Total.DealerCom.Web", "Total.DealerCom\Total.DealerCom.Web.csproj", "{7108A13C-64F5-4B8D-B753-7D03FE37D6CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Total.DealerCom.Tests", "Total.DealerCom.Tests\Total.DealerCom.Tests.csproj", "{C67D4560-136A-4D39-8901-62F6CE2D23BD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{C8FE525E-E59D-4290-9221-569D9CAB6277}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\AzureWebsitePublishModule.psm1 = PublishScripts\AzureWebsitePublishModule.psm1
+		PublishScripts\Publish-WebApplicationWebsite.ps1 = PublishScripts\Publish-WebApplicationWebsite.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configurations", "Configurations", "{EE62D184-56B5-4456-B5A4-52E6474094B9}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Configurations\TotalDealerCom-WAWS-dev.json = PublishScripts\Configurations\TotalDealerCom-WAWS-dev.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Db", "Db", "{2FF848FE-62D4-43CF-BD7A-F566A8085B52}"
+	ProjectSection(SolutionItems) = preProject
+		Db\TotalDealerComm_backup_2015_07_05_230001_9828750.zip.001 = Db\TotalDealerComm_backup_2015_07_05_230001_9828750.zip.001
+		Db\TotalDealerComm_backup_2015_07_05_230001_9828750.zip.002 = Db\TotalDealerComm_backup_2015_07_05_230001_9828750.zip.002
+		Db\TotalDealerComm_backup_2015_07_05_230001_9828750.zip.003 = Db\TotalDealerComm_backup_2015_07_05_230001_9828750.zip.003
+		Db\TotalDealerComm_backup_2015_07_05_230001_9828750.zip.004 = Db\TotalDealerComm_backup_2015_07_05_230001_9828750.zip.004
+		Db\TotalDealerComm_backup_2015_07_05_230001_9828750.zip.005 = Db\TotalDealerComm_backup_2015_07_05_230001_9828750.zip.005
+		Db\TotalDealerComm_backup_2015_07_05_230001_9828750.zip.006 = Db\TotalDealerComm_backup_2015_07_05_230001_9828750.zip.006
+		Db\TotalDealerComm_backup_2015_07_05_230001_9828750.zip.007 = Db\TotalDealerComm_backup_2015_07_05_230001_9828750.zip.007
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dependencies", "Dependencies", "{8389F543-893C-4FFC-89AB-F3E98330A6AF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OldBin", "OldBin", "{9F0B74FD-5249-419B-B2E0-9533EBDE1E3D}"
+	ProjectSection(SolutionItems) = preProject
+		Dependencies\OldBin\AjaxControlToolkit.dll = Dependencies\OldBin\AjaxControlToolkit.dll
+		Dependencies\OldBin\App_global.asax.compiled = Dependencies\OldBin\App_global.asax.compiled
+		Dependencies\OldBin\App_global.asax.dll = Dependencies\OldBin\App_global.asax.dll
+		Dependencies\OldBin\CKEditor.NET.dll = Dependencies\OldBin\CKEditor.NET.dll
+		Dependencies\OldBin\DevExpress.Data.v11.1.dll = Dependencies\OldBin\DevExpress.Data.v11.1.dll
+		Dependencies\OldBin\DevExpress.Printing.v11.1.Core.dll = Dependencies\OldBin\DevExpress.Printing.v11.1.Core.dll
+		Dependencies\OldBin\DevExpress.Web.ASPxEditors.v11.1.dll = Dependencies\OldBin\DevExpress.Web.ASPxEditors.v11.1.dll
+		Dependencies\OldBin\DevExpress.Web.ASPxGridView.v11.1.dll = Dependencies\OldBin\DevExpress.Web.ASPxGridView.v11.1.dll
+		Dependencies\OldBin\DevExpress.Web.v11.1.dll = Dependencies\OldBin\DevExpress.Web.v11.1.dll
+		Dependencies\OldBin\DevExpress.Xpo.v11.1.dll = Dependencies\OldBin\DevExpress.Xpo.v11.1.dll
+		Dependencies\OldBin\DevExpress.Xpo.v11.1.Web.dll = Dependencies\OldBin\DevExpress.Xpo.v11.1.Web.dll
+		Dependencies\OldBin\EntityFramework.dll = Dependencies\OldBin\EntityFramework.dll
+		Dependencies\OldBin\ExcelLibrary.dll = Dependencies\OldBin\ExcelLibrary.dll
+		Dependencies\OldBin\Infrastructure.Server.dll = Dependencies\OldBin\Infrastructure.Server.dll
+		Dependencies\OldBin\Infrastructure.Shared.dll = Dependencies\OldBin\Infrastructure.Shared.dll
+		Dependencies\OldBin\Infrastructure.UI.dll = Dependencies\OldBin\Infrastructure.UI.dll
+		Dependencies\OldBin\Interop.MAPI.dll = Dependencies\OldBin\Interop.MAPI.dll
+		Dependencies\OldBin\Ionic.Zip.dll = Dependencies\OldBin\Ionic.Zip.dll
+		Dependencies\OldBin\itextsharp.dll = Dependencies\OldBin\itextsharp.dll
+		Dependencies\OldBin\Microsoft.Practices.EnterpriseLibrary.Caching.Cryptography.dll = Dependencies\OldBin\Microsoft.Practices.EnterpriseLibrary.Caching.Cryptography.dll
+		Dependencies\OldBin\Microsoft.Practices.EnterpriseLibrary.Caching.Database.dll = Dependencies\OldBin\Microsoft.Practices.EnterpriseLibrary.Caching.Database.dll
+		Dependencies\OldBin\Microsoft.Practices.EnterpriseLibrary.Caching.dll = Dependencies\OldBin\Microsoft.Practices.EnterpriseLibrary.Caching.dll
+		Dependencies\OldBin\Microsoft.Practices.EnterpriseLibrary.Common.dll = Dependencies\OldBin\Microsoft.Practices.EnterpriseLibrary.Common.dll
+		Dependencies\OldBin\Microsoft.Practices.EnterpriseLibrary.Configuration.Design.HostAdapter.dll = Dependencies\OldBin\Microsoft.Practices.EnterpriseLibrary.Configuration.Design.HostAdapter.dll
+		Dependencies\OldBin\Microsoft.Practices.EnterpriseLibrary.Configuration.Design.HostAdapterV5.dll = Dependencies\OldBin\Microsoft.Practices.EnterpriseLibrary.Configuration.Design.HostAdapterV5.dll
+		Dependencies\OldBin\Microsoft.Practices.EnterpriseLibrary.Configuration.DesignTime.dll = Dependencies\OldBin\Microsoft.Practices.EnterpriseLibrary.Configuration.DesignTime.dll
+		Dependencies\OldBin\Microsoft.Practices.EnterpriseLibrary.Configuration.EnvironmentalOverrides.dll = Dependencies\OldBin\Microsoft.Practices.EnterpriseLibrary.Configuration.EnvironmentalOverrides.dll
+		Dependencies\OldBin\Microsoft.Practices.EnterpriseLibrary.Data.dll = Dependencies\OldBin\Microsoft.Practices.EnterpriseLibrary.Data.dll
+		Dependencies\OldBin\Microsoft.Practices.EnterpriseLibrary.Data.SqlCe.dll = Dependencies\OldBin\Microsoft.Practices.EnterpriseLibrary.Data.SqlCe.dll
+		Dependencies\OldBin\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll = Dependencies\OldBin\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll
+		Dependencies\OldBin\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.dll = Dependencies\OldBin\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.dll
+		Dependencies\OldBin\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.WCF.dll = Dependencies\OldBin\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.WCF.dll
+		Dependencies\OldBin\Microsoft.Practices.EnterpriseLibrary.Logging.Database.dll = Dependencies\OldBin\Microsoft.Practices.EnterpriseLibrary.Logging.Database.dll
+		Dependencies\OldBin\Microsoft.Practices.EnterpriseLibrary.Logging.dll = Dependencies\OldBin\Microsoft.Practices.EnterpriseLibrary.Logging.dll
+		Dependencies\OldBin\Microsoft.Practices.EnterpriseLibrary.PolicyInjection.dll = Dependencies\OldBin\Microsoft.Practices.EnterpriseLibrary.PolicyInjection.dll
+		Dependencies\OldBin\Microsoft.Practices.EnterpriseLibrary.Security.AzMan.dll = Dependencies\OldBin\Microsoft.Practices.EnterpriseLibrary.Security.AzMan.dll
+		Dependencies\OldBin\Microsoft.Practices.EnterpriseLibrary.Security.Cache.CachingStore.dll = Dependencies\OldBin\Microsoft.Practices.EnterpriseLibrary.Security.Cache.CachingStore.dll
+		Dependencies\OldBin\Microsoft.Practices.EnterpriseLibrary.Security.Cryptography.dll = Dependencies\OldBin\Microsoft.Practices.EnterpriseLibrary.Security.Cryptography.dll
+		Dependencies\OldBin\Microsoft.Practices.EnterpriseLibrary.Security.dll = Dependencies\OldBin\Microsoft.Practices.EnterpriseLibrary.Security.dll
+		Dependencies\OldBin\Microsoft.Practices.EnterpriseLibrary.Validation.dll = Dependencies\OldBin\Microsoft.Practices.EnterpriseLibrary.Validation.dll
+		Dependencies\OldBin\Microsoft.Practices.EnterpriseLibrary.Validation.Integration.AspNet.dll = Dependencies\OldBin\Microsoft.Practices.EnterpriseLibrary.Validation.Integration.AspNet.dll
+		Dependencies\OldBin\Microsoft.Practices.EnterpriseLibrary.Validation.Integration.WCF.dll = Dependencies\OldBin\Microsoft.Practices.EnterpriseLibrary.Validation.Integration.WCF.dll
+		Dependencies\OldBin\Microsoft.Practices.EnterpriseLibrary.Validation.Integration.WinForms.dll = Dependencies\OldBin\Microsoft.Practices.EnterpriseLibrary.Validation.Integration.WinForms.dll
+		Dependencies\OldBin\Microsoft.Practices.EnterpriseLibrary.Validation.Integration.WPF.dll = Dependencies\OldBin\Microsoft.Practices.EnterpriseLibrary.Validation.Integration.WPF.dll
+		Dependencies\OldBin\Microsoft.Practices.ObjectBuilder2.dll = Dependencies\OldBin\Microsoft.Practices.ObjectBuilder2.dll
+		Dependencies\OldBin\Microsoft.Practices.ServiceLocation.dll = Dependencies\OldBin\Microsoft.Practices.ServiceLocation.dll
+		Dependencies\OldBin\Microsoft.Practices.Unity.Configuration.dll = Dependencies\OldBin\Microsoft.Practices.Unity.Configuration.dll
+		Dependencies\OldBin\Microsoft.Practices.Unity.dll = Dependencies\OldBin\Microsoft.Practices.Unity.dll
+		Dependencies\OldBin\Microsoft.Practices.Unity.Interception.Configuration.dll = Dependencies\OldBin\Microsoft.Practices.Unity.Interception.Configuration.dll
+		Dependencies\OldBin\Microsoft.Practices.Unity.Interception.dll = Dependencies\OldBin\Microsoft.Practices.Unity.Interception.dll
+		Dependencies\OldBin\Microsoft.Practices.Unity.ServiceLocatorAdapter.dll = Dependencies\OldBin\Microsoft.Practices.Unity.ServiceLocatorAdapter.dll
+		Dependencies\OldBin\Microsoft.Practices.Unity.StaticFactory.dll = Dependencies\OldBin\Microsoft.Practices.Unity.StaticFactory.dll
+		Dependencies\OldBin\MigraDoc.DocumentObjectModel.dll = Dependencies\OldBin\MigraDoc.DocumentObjectModel.dll
+		Dependencies\OldBin\MigraDoc.Rendering.dll = Dependencies\OldBin\MigraDoc.Rendering.dll
+		Dependencies\OldBin\MigraDoc.RtfRendering.dll = Dependencies\OldBin\MigraDoc.RtfRendering.dll
+		Dependencies\OldBin\MsmqDistributor.exe = Dependencies\OldBin\MsmqDistributor.exe
+		Dependencies\OldBin\NetMAPI.dll = Dependencies\OldBin\NetMAPI.dll
+		Dependencies\OldBin\PdfSharp.Charting.dll = Dependencies\OldBin\PdfSharp.Charting.dll
+		Dependencies\OldBin\PdfSharp.dll = Dependencies\OldBin\PdfSharp.dll
+		Dependencies\OldBin\Services.dll = Dependencies\OldBin\Services.dll
+		Dependencies\OldBin\Shp.Handler.dll = Dependencies\OldBin\Shp.Handler.dll
+		Dependencies\OldBin\TallComponents.PDFThumbnail.dll = Dependencies\OldBin\TallComponents.PDFThumbnail.dll
+		Dependencies\OldBin\TotalDealer_2008.dll = Dependencies\OldBin\TotalDealer_2008.dll
+		Dependencies\OldBin\TotalDealer_2008.dll.config = Dependencies\OldBin\TotalDealer_2008.dll.config
+		Dependencies\OldBin\Unity.LifeTimeContainers.dll = Dependencies\OldBin\Unity.LifeTimeContainers.dll
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{4E94B24F-9580-44D9-B21C-86CEC7F0F023}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Total.DealerCom.Core", "Total.DealerCom.Core\Total.DealerCom.Core.csproj", "{57990295-B140-4183-89C4-1C154CDF7449}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Total.DealerCom.DataAccessLayer", "Total.DealerCom.DataAccessLayer\Total.DealerCom.DataAccessLayer.csproj", "{B47575C2-148A-4F1B-9A46-9B20D1101C2A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Total.DealerCom.BL", "Total.DealerCom.BL\Total.DealerCom.BL.csproj", "{D3B012A1-6010-4E62-A818-649972514D6F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7108A13C-64F5-4B8D-B753-7D03FE37D6CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7108A13C-64F5-4B8D-B753-7D03FE37D6CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7108A13C-64F5-4B8D-B753-7D03FE37D6CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7108A13C-64F5-4B8D-B753-7D03FE37D6CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C67D4560-136A-4D39-8901-62F6CE2D23BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C67D4560-136A-4D39-8901-62F6CE2D23BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C67D4560-136A-4D39-8901-62F6CE2D23BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C67D4560-136A-4D39-8901-62F6CE2D23BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57990295-B140-4183-89C4-1C154CDF7449}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57990295-B140-4183-89C4-1C154CDF7449}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57990295-B140-4183-89C4-1C154CDF7449}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57990295-B140-4183-89C4-1C154CDF7449}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B47575C2-148A-4F1B-9A46-9B20D1101C2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B47575C2-148A-4F1B-9A46-9B20D1101C2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B47575C2-148A-4F1B-9A46-9B20D1101C2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B47575C2-148A-4F1B-9A46-9B20D1101C2A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3B012A1-6010-4E62-A818-649972514D6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3B012A1-6010-4E62-A818-649972514D6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3B012A1-6010-4E62-A818-649972514D6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3B012A1-6010-4E62-A818-649972514D6F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{EE62D184-56B5-4456-B5A4-52E6474094B9} = {C8FE525E-E59D-4290-9221-569D9CAB6277}
+		{9F0B74FD-5249-419B-B2E0-9533EBDE1E3D} = {8389F543-893C-4FFC-89AB-F3E98330A6AF}
+	EndGlobalSection
+EndGlobal

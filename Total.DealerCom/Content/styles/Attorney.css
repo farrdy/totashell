@@ -1,0 +1,38 @@
+﻿.divider
+{
+  border-top:#364474 1px solid;
+  border-bottom:#364474 1px solid;
+  border-right:#364474 1px solid;
+  border-left:#364474 1px solid;
+  background-color:#CFDEE6;
+  height:3px;
+}
+
+.dividerLarge
+{
+  border-top:#364474 1px solid;
+  border-bottom:#364474 1px solid;
+  border-right:#364474 1px solid;
+  border-left:#364474 1px solid;
+  background-color:#CFDEE6;
+  height:18px;
+}
+
+.section
+{
+  background:#CFDEE6;
+  height:18px;
+}
+
+.button
+{
+    background:#CFDEE6;
+    color:Black;
+    border-color:#CFDEE6;
+    border-width:1px;
+}
+
+input[type=text]
+{
+  width:250px;
+}

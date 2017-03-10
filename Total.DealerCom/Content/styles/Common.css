@@ -1,0 +1,608 @@
+﻿
+* {
+margin: 0;
+}
+
+.footer
+{
+	width:90%;
+	text-align:center;
+	color:Gray;
+	margin-left:auto;
+	margin-right:auto;
+	font-size:xx-small;
+    font-family  : verdana,tahoma,sans-serif;
+    position:static;
+	margin-top: -50px; /* negative value of footer height */
+	height: 50px;
+clear:both;
+}
+
+.watermark
+{
+opacity:0.4;
+filter:alpha(opacity=40); /* For IE8 and earlier */
+}
+
+.gallery_border
+{
+	border-color: #A4C0CD;
+	border-width: 1px;
+	border-style: solid;
+	padding-top: 1;	
+}
+
+.gallery_border:hover
+{
+	border-color: Black;
+	border-width: 1px;
+	border-style: solid;
+	padding-top: 1;
+	
+}
+
+.gallery_cell
+{
+	background-color:White;
+	width:134px; height:120px;	
+	padding: 2px 2px 2px 2px;
+}
+
+.gallery_Desc
+{
+	background-color:#72AAFF;
+	color:#ffffff;
+    font-family  : verdana,tahoma,sans-serif;
+	font-size:9;
+	font-weight:bold;
+}
+
+html
+{
+	height: 100%;    
+	width: 100%; 
+	background-color: gray;
+	font-size:small;
+    font-family  : verdana,tahoma,sans-serif;
+}
+
+form
+{
+	min-height: 100%;
+	height: 100%;
+	width: 100%;
+}
+
+body {
+height: 100%;    
+	width: 100%; 
+	min-height: 100%; 
+	background-color: gray;
+	font-size:small;
+    font-family  : verdana,tahoma,sans-serif;
+}
+
+.wrapper 
+{
+  margin-top:3px;
+  margin-bottom:3px;
+  min-height: 100%;
+  height : auto !important;
+  background-color:#FAFAFA;
+  height : 100%;
+  padding-bottom: 50px;
+}
+
+.Content	
+{ 
+	padding: 25px; overflow:visible;	
+	min-height: 100%;
+	height: auto !important;
+	background-color:#FAFAFA;
+	height: 100%;
+}
+
+.push
+{
+	clear:both;
+}
+
+.home_block_header 	{  color:gray; font-size:small}
+
+.btn_grey
+{
+	background-image: url(../images/button_tile.gif); background-repeat: repeat-x;
+	font-size:4;
+    font-family  : verdana,tahoma,sans-serif;
+    height:22px;
+    width:90px;
+    background-position:top; border: solid 1px #7f7f7f;
+    text-align: center; 		
+	text-decoration: none; 
+}
+
+.ScoreCardInboxStyle
+{
+	color: Black ;
+	text-align: left;
+	font-style:normal;
+	font-weight:normal;
+	font-size:smaller;
+	font-family: verdana,tahoma,sans-serif;
+}
+
+.FAQStyle
+{
+	color: Black ;
+	text-align: left;
+	font-style:normal;
+	font-weight:bold;
+	font-size:smaller;
+	font-family: verdana,tahoma,sans-serif;
+}
+
+.FAQAnswerStyle
+{
+	color: Black ;
+	text-align: left;
+	font-style:normal;
+	font-weight:normal;
+	font-size:smaller;
+	font-family: verdana,tahoma,sans-serif;
+}
+
+.btn_grey:hover, .btn_grey:active	
+{ 
+	background-position:bottom; 
+}
+
+.block_content	
+{ 
+	overflow:hidden; 
+	padding: 9px 0 15px 0; 
+	height:100%;
+}
+
+.block_content img 
+{ 
+	margin-bottom: 7px; 	
+	height:300px;
+}
+
+.home_inbox
+{ 
+	overflow:hidden;
+}
+
+.home_articles 
+{
+	clear: both; 
+	margin-bottom: 25px; 
+	overflow:hidden;
+}
+
+.article_1,.article_2, .article_3, .article_4 
+{ 
+	width: 175px; 
+	max-width: 175px;
+	float: left; 
+   padding: 1px 1px 1px 1px; 
+	color:Maroon;
+	font-size:small;
+}
+
+table
+{
+  font-size: small;
+  font-family: verdana,tahoma,sans-serif;
+}
+
+
+.container 	
+{
+	background-color: #FAFAFA;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -4em;
+}
+
+.content_bottom 
+{ 
+	height: 5px; 
+	width: 95%;
+    margin-right: auto; 
+	margin-left: auto;
+}
+
+.corner_left 	{ float: left;}
+.corner_right 	{ float: right;}
+
+
+input, textarea, td
+{
+	font-weight: normal;
+	font-size: small;
+	font-family: verdana,tahoma,sans-serif;	
+}
+
+.MenuHeaderTotal	
+{ 
+	background-image: url(../images/menu_tile.gif); 
+	background-repeat: repeat-x; 
+	border-right:solid 1px White; 
+	border-left:solid 1px White;
+	border-bottom:solid 1px Gray;
+	height:25px;
+	font-family: verdana,tahoma,sans-serif;  
+}
+
+.MenuSubHeaderTotal	
+{ 
+	background-image: url(../images/menu_tile.gif); 
+	background-repeat: repeat-x; 
+	border-right:solid 1px White; 
+	border-left:solid 1px White;
+	border-bottom:solid 1px Gray;
+	height:25px;
+	font-family: verdana,tahoma,sans-serif;  
+}
+.MenuHeaderTotal3	
+{	
+	background-color:#f2f2f2;
+	border-right:solid 1px Gray; 
+	border-left:solid 1px Gray;
+	border-bottom:solid 1px Gray;
+	height:25px;
+	Color:Red;
+	font-family: verdana,tahoma,sans-serif;
+	z-index: 360;   
+}
+
+.MenuHeaderTotal2	
+{	
+	background-color:#f2f2f2;
+	border-right:solid 1px Gray; 
+	border-left:solid 1px Gray;
+	border-bottom:solid 1px Gray;
+	height:25px;
+	Color:gray;
+	font-family: verdana,tahoma,sans-serif;
+	z-index: 360;   
+}
+
+.StaticMenuItemTotal	
+{ 	
+	color: Black;
+	font-size: small;
+	width: 100px;
+	height:25px;
+	font-weight: normal;
+}
+
+.MenuItemHover
+{	
+    background: #424242 url(../Images/grd_head2.png) repeat-x top;    
+    font-weight: normal;
+	font-size: small;
+	height:25px;
+	color:Black;
+	font-family: verdana,tahoma,sans-serif;  
+}
+
+.MenuHeader
+{
+	padding: 1px 1px 1px 1px;   
+    color:White;             
+    font-weight: normal;
+	font-size: small;
+	font-family: verdana,tahoma,sans-serif; 
+    border-style:Solid;
+    border-width:thin;
+    border-color:Black;
+}
+
+.DynamicMenuItemStyle1
+{   
+    font-weight: normal;
+	font-size: small;
+	font-family: verdana,tahoma,sans-serif; 
+	z-index: 360; 
+}
+
+ .mGrid {   
+     width: 100%;   
+     background-color: #fff;   
+     margin: 5px 0 10px 0;   
+     border: solid 1px #525252;   
+     border-collapse:collapse;   
+     text-align:center;
+ }  
+ .mGrid td {   
+     height:20px;  
+     border: solid 1px #c1c1c1;   
+     color: #717171;   
+ }  
+ 
+ .mGrid tr {   
+     height:20px;       
+ }  
+ 
+ .mGrid th {   
+     padding: 4px 2px;   
+     color: #fff;   
+     background: #424242 url(../Images/grd_head2.png) repeat-x top;   
+     border-left: solid 1px #525252;   
+     font-size:small;   
+ }  
+ .mGrid .alt { background: #fcfcfc url(../Images/grd_alt.png) repeat-x top; }  
+ .mGrid .pgr { background: #424242 url(../Images/grd_head2.png) repeat-x top;  }  
+ .mGrid .pgr table { margin: 2px 0; text-align:center; }  
+ .mGrid .pgr td {   
+     border-width: 0;   
+     padding: 1px 7px 1px 7px;   
+     border-left: solid 1px #666;   
+     font-weight: bold;   
+     color: #fff;   
+     line-height: 10px;   
+  }     
+ .mGrid .pgr a { color: #666; text-decoration: none; }  
+ .mGrid .pgr a:hover { color: #000; text-decoration: none; } 
+
+
+.HeaderStyle
+{
+	background-color: #4F7FA5 ;
+	border-color: Black ;
+	border-style: Solid ; 
+	color: White ;
+	border-width:thin;
+	text-align:left;
+	font-style:normal;
+	font-weight:normal;
+	white-space:nowrap;
+}
+
+.labelPadding
+{
+	padding: 5px 5px 5px 5px;
+	float: right;
+}
+
+.LogoutLabelPadding
+{
+	padding: 0px 6px 0px 0px;
+	color:Black;
+	text-decoration:none;
+}
+
+.TitleStyle
+{
+	color: Black ;
+	text-align:left;
+	font-style:normal;
+	font-weight:bold;
+	font-size:large;
+	font-family: verdana,tahoma,sans-serif;
+	text-align:center;
+}
+
+.RowCellStyle
+{
+	color: Black ;
+	text-align: left;
+	font-style:normal;
+	font-weight:normal;
+	font-size:small;
+	font-family: verdana,tahoma,sans-serif;
+}
+
+.SectionTitleStyle
+{
+	color:Navy;
+	text-align:left;
+	font-style:normal;
+	font-weight:bold;
+	font-size:larger;
+	font-family: verdana,tahoma,sans-serif;
+}
+
+.QuestionStyle
+{
+	color:Olive;
+	text-align:left;
+	font-style:normal;
+	font-weight:bold;
+	font-size:medium;
+	font-family: verdana,tahoma,sans-serif;
+}
+
+.EditRowStyle
+{
+	border-style:none;                                
+}
+
+.PagerStyle
+{
+	text-align:Center;
+	text-decoration:underline;
+}
+
+.gridcell
+{
+    WIDTH: 200px;
+}
+
+.hl
+{
+  width:20px;
+  height:3px;
+}
+
+
+.error_msg
+{
+  font-weight: normal;
+  font-size: 10pt;
+  font-family: verdana,tahoma,sans-serif;
+  color: red;
+}
+
+.status_msg
+{
+    font-weight: normal;
+	font-size: 10pt;
+	font-family: verdana,tahoma,sans-serif;
+	color: black;
+	background-color:Yellow;
+}
+
+.field_error
+{
+	background-color: #FFFFCC;
+}
+
+.logoStyle
+{
+  border-width: thin;
+  border-style:solid;
+  border-color:White; 
+  text-align:left; 
+  height: 63px; 
+  background-color: #7BABDB;
+  background: #7BABDB url(../Images/Back_Tile.png) repeat-x;     
+  background-repeat:repeat-x; 
+  background-attachment: fixed; 
+}
+
+
+.centerDiv
+{
+  width:90%; 
+  margin-left:auto; 
+  margin-right:auto;
+  margin-top:3px;
+  margin-bottom:3px;
+}
+
+div.flash {
+	width: 375px;
+	margin: 10px 5px;
+	border-color: #D9E4FF;
+
+	-moz-border-radius-topleft : 5px;
+	-webkit-border-top-left-radius : 5px;
+    -moz-border-radius-topright : 5px;
+    -webkit-border-top-right-radius : 5px;
+    -moz-border-radius-bottomleft : 5px;
+    -webkit-border-bottom-left-radius : 5px;
+    -moz-border-radius-bottomright : 5px;
+    -webkit-border-bottom-right-radius : 5px;
+
+}
+
+.progressWrapper {
+	width: 357px;
+	overflow: hidden;
+}
+
+.progressContainer {
+	margin: 5px;
+	padding: 4px;
+	border: solid 1px #E8E8E8;
+	background-color: #F7F7F7;
+	overflow: hidden;
+}
+/* Message */
+.message {
+	margin: 1em 0;
+	padding: 10px 20px;
+	border: solid 1px #FFDD99;
+	background-color: #FFFFCC;
+	overflow: hidden;
+}
+/* Error */
+.red {
+	border: solid 1px #B50000;
+	background-color: #FFEBEB;
+}
+
+/* Current */
+.green {
+	border: solid 1px #DDF0DD;
+	background-color: #EBFFEB;
+}
+
+/* Complete */
+.blue {
+	border: solid 1px #CEE2F2;
+	background-color: #F0F5FF;
+}
+
+.progressName {
+	font-size: 8pt;
+	font-weight: 700;
+	color: #555;
+	width: 323px;
+	height: 14px;
+	text-align: left;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.progressBarInProgress,
+.progressBarComplete,
+.progressBarError {
+	font-size: 0;
+	width: 0%;
+	height: 2px;
+	background-color: blue;
+	margin-top: 2px;
+}
+
+.progressBarComplete {
+	width: 100%;
+	background-color: green;
+	visibility: hidden;
+}
+
+.progressBarError {
+	width: 100%;
+	background-color: red;
+	visibility: hidden;
+}
+
+.progressBarStatus {
+	margin-top: 2px;
+	width: 337px;
+	font-size: 7pt;
+	font-family: Arial;
+	text-align: left;
+	white-space: nowrap;
+}
+
+a.progressCancel {
+	font-size: 0;
+	display: block;
+	height: 14px;
+	width: 14px;
+	background-image: url(../images/cancelbutton.gif);
+	background-repeat: no-repeat;
+	background-position: -14px 0px;
+	float: right;
+}
+
+a.progressCancel:hover {
+	background-position: 0px 0px;
+}
+
+
+/* -- SWFUpload Object Styles ------------------------------- */
+.swfupload {
+	vertical-align: top;
+}
+
+ .chzn-single {
+            height: 30px !important;
+            line-height: 30px !important;
+        }

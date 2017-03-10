@@ -1,0 +1,63 @@
+﻿.divider
+{
+  border-top: #DDC8E8 1px solid;
+  border-bottom: #DDC8E8 1px solid;
+  border-right: #DDC8E8 1px solid;
+  border-left: #DDC8E8 1px solid;
+  background-color: #DDC8E8;
+}
+
+td.left
+{
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 11px;
+    FONT-FAMILY: verdana,tahoma,sans-serif;
+}
+
+td.space
+{
+    BACKGROUND-COLOR: #DDC8E8;
+}
+
+td.title
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11px;
+    FONT-FAMILY: verdana,tahoma,sans-serif;
+}
+
+td.pagenav
+{
+    BACKGROUND-COLOR: #DDC8E8;
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 11px;
+    FONT-FAMILY: verdana,tahoma,sans-serif;
+    FONT-WEIGHT:bold;
+}
+
+input[type=text]
+{
+  width:250px;
+}
+
+.button
+{
+    background: #DDC8E8;
+    color:Black;
+    border-color:#DDC8E8;
+    border-width:1px;
+  
+}
+
+a:hover
+{
+    TEXT-DECORATION: none;
+    COLOR: #999999;
+}
+
+/*a:visited
+{
+    TEXT-DECORATION : none;
+    COLOR: #999999;
+}
+*/

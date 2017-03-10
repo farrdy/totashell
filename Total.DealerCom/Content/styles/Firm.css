@@ -1,0 +1,37 @@
+﻿.divider
+{
+  border-top: #DDDBEA 1px solid;
+  border-bottom: #DDDBEA 1px solid;
+  border-right: #DDDBEA 1px solid;
+  border-left: #DDDBEA 1px solid;
+  background-color: #DDDBEA;
+  height: 3px;
+}
+
+.dividerLarge
+{
+  border-top: #DDDBEA 1px solid;
+  border-bottom: #DDDBEA 1px solid;
+  border-right: #DDDBEA 1px solid;
+  border-left: #DDDBEA 1px solid;
+  background-color: #DDDBEA;
+  height: 18px;
+}
+
+.section
+{
+  background: #DDDBEA;
+}
+
+.button
+{
+  background: #DDDBEA;
+  color:Black;
+  border-color:#DDDBEA;
+  border-width:1px;
+}
+
+input[type=text]
+{
+  width:250px;
+}

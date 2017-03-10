@@ -1,0 +1,230 @@
+﻿<div ng-controller="EditStandingDryLogCtrl">
+    <h3>
+        Dry Standing Instance Add/Update
+    </h3>
+    <hr />
+    <form role="form" style="max-width: 500px;">
+        <strong class="error"></strong>
+        <div class="form-group">
+            <label for="IDInstance">
+                IDInstance
+            </label>
+            <input type="text" class="form-control" ng-model="IDInstance" />
+        </div>
+        <div class="form-group">
+            <label for="DealerName">
+                Dealer Name:
+            </label>
+            <input type="text" class="form-control" ng-model="DealerName" />
+        </div>
+        <div class="form-group">
+            <label for="Email">
+                Email:
+            </label>
+            <input type="text" class="form-control" ng-model="Email" />
+        </div>
+        <div class="form-group">
+            <label for="salary">
+                Name:
+            </label>
+            <input type="text" class="form-control" ng-model="Name" />
+        </div>
+        <div class="form-group">
+            <label for="PODReference">
+                POD Reference:
+            </label>
+            <input type="text" class="form-control" ng-model="PODReference" />
+        </div>
+        <div class="form-group">
+            <label for="salary">
+                IDSOC:
+            </label>
+            <input type="text" class="form-control" ng-model="IDSOC" />
+        </div>
+
+        <div class="form-group">
+            <label for="SOCName">
+                SOCName:
+            </label>
+            <input type="text" class="form-control" ng-model="SOCName" />
+        </div>
+        <div class="form-group">
+            <label>
+                <input type="checkbox" ng-model="Claim" />Claim
+            </label>
+        </div>
+
+        <div class="form-group">
+            <label for="ClaimComment">
+                ClaimComment:
+            </label>
+            <input type="text" class="form-control" ng-model="ClaimComment" />
+        </div>
+        <div class="form-group">
+            <label for="Volume">
+                Volume:
+            </label>
+            <input type="text" class="form-control" ng-model="Volume" />
+        </div>
+        <div class="form-group">
+            <label for="IDIssueType">
+                IDIssueType:
+            </label>
+            <input type="text" class="form-control" ng-model="IDIssueType" />
+        </div>
+
+        <div class="form-group">
+            <label for="IssueTypeName">
+                IssueTypeName:
+            </label>
+            <input type="text" class="form-control" ng-model="IssueTypeName" />
+        </div>
+        <div class="form-group">
+            <label for="Duration">
+                Duration:
+            </label>
+            <input type="text" class="form-control" ng-model="Duration" />
+        </div>
+        <div class="form-group">
+            <label for="Comment">
+                Comment:
+            </label>
+            <input type="text" class="form-control" ng-model="Comment" />
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" ng-model="ATGOperational" />
+            <label>
+                <input type="checkbox" ng-model="ATGOperational" />ATGOperational
+            </label>
+        </div>
+        <div class="form-group">
+            <div class="form-group checkbox">
+                <label>
+                    <input type="checkbox" ng-model="ATGCommFail" />ATGCommFail
+                </label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="UserId">
+                UserId:
+            </label>
+            <input type="text" class="form-control" ng-model="UserId" />
+        </div>
+
+        <div class="form-group">
+            <label for="UserId">
+                OutletNo:
+            </label>
+            <input type="text" class="form-control" ng-model="UserId" />
+        </div>
+
+        <div class="form-group">
+            <label for="DealerUser">
+                OutletNo:
+            </label>
+            <input type="text" class="form-control" ng-model="DealerUser" />
+        </div>
+        <div class="form-group">
+            <label for="IDProduct">
+                IDProduct:
+            </label>
+            <input type="text" class="form-control" ng-model="IDProduct" />
+        </div>
+        <div class="form-group">
+            <label for="ProductName">
+                ProductName:
+            </label>
+            <input type="text" class="form-control" ng-model="ProductName" />
+        </div>
+
+        <div class="form-group">
+            <label for="IDTank">
+                IDTank:
+            </label>
+            <input type="text" class="form-control" ng-model="IDTank" />
+        </div>
+
+        <div class="form-group">
+            <label for="TankName">
+                TankName:
+            </label>
+            <input type="text" class="form-control" ng-model="TankName" />
+        </div>
+
+
+        <div class="form-group">
+            <label for="DateDryFrom">
+                DateDryFrom:
+            </label>
+            <input type="text" class="form-control" ng-model="DateDryFrom" />
+        </div>
+
+        <div class="form-group">
+            <label for="DateDryTo">
+                DateDryTo:
+            </label>
+            <input type="text" class="form-control" ng-model="DateDryTo" />
+        </div>
+        <div class="form-group">
+            <label for="DateLogged">
+                DateLogged:
+            </label>
+            <input type="text" class="form-control" ng-model="DateLogged" />
+        </div>
+        <div class="form-group">
+            <label for="DateClosed">
+                DateClosed:
+            </label>
+            <input type="text" class="form-control" ng-model="DateClosed" />
+        </div>
+
+        <div class="form-group">
+            <label for="IDRequestStatus">
+                IDRequestStatus:
+            </label>
+            <input type="text" class="form-control" ng-model="IDRequestStatus" />
+        </div>
+        <div class="form-group">
+            <label for="RequestStatusName">
+                RequestStatusName:
+            </label>
+            <input type="text" class="form-control" ng-model="RequestStatusName" />
+        </div>
+
+        <!--<div class="form-group">
+            <label for="country">
+                Country:
+            </label>
+            <select class="form-control" id="country" ng-model="country" ng-options="c.Value as c.Text for c in countries" ng-change="getStates()">
+                <option value="">-- Select Country --</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="state">
+                State:
+            </label>
+            <select class="form-control" id="state" ng-model="state" ng-disabled="!states" ng-options="s.Value as s.Text for s in states">
+                <option value="">-- Select State --</option>
+            </select>
+        </div>
+
+
+        <div class="form-group">
+            <label for="dob">
+                Date of Birth:
+            </label>
+            <input type="date" class="form-control" id="dob" ng-model="dob" />
+        </div>
+        <div class="form-group">
+            <label for="description">
+                Description:
+            </label>
+            <textarea rows="5" cols="10" class="form-control" id="description" ng-model="description"></textarea>
+        </div>-->
+
+        <a href="#/list" class="btn btn-info">Back to List</a>
+        <button type="submit" class="btn btn-default" ng-click="save()">
+            Submit
+        </button>
+     </form>
+</div>

@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{57990295-B140-4183-89C4-1C154CDF7449}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Total.DealerCom.Core</RootNamespace>
+    <AssemblyName>Total.DealerCom.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Mvc, Version=4.0.0.1, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Poco\AnswerOption.cs" />
+    <Compile Include="Poco\Article.cs" />
+    <Compile Include="Poco\ArticleSearch.cs" />
+    <Compile Include="Poco\Audit.cs" />
+    <Compile Include="Poco\Dealer.cs" />
+    <Compile Include="Poco\DealerAccountInfo.cs" />
+    <Compile Include="Poco\Email.cs" />
+    <Compile Include="Poco\EmailTemplate.cs" />
+    <Compile Include="Poco\FAQ.cs" />
+    <Compile Include="Poco\GeneralChangesItem.cs" />
+    <Compile Include="Poco\GeneralChangesItemGroup.cs" />
+    <Compile Include="Poco\GeneralChangesLink.cs" />
+    <Compile Include="Poco\GeneralChangesMasterDataStatus.cs" />
+    <Compile Include="Poco\GeneralChangesRequest.cs" />
+    <Compile Include="Poco\GeneralChangesRequestSearch.cs" />
+    <Compile Include="Poco\GeneralChangesStatus.cs" />
+    <Compile Include="Poco\Group.cs" />
+    <Compile Include="Poco\Issue.cs" />
+    <Compile Include="Poco\IssueResult.cs" />
+    <Compile Include="Poco\ListOption.cs" />
+    <Compile Include="Poco\LogEntry.cs" />
+    <Compile Include="Poco\Lookup.cs" />
+    <Compile Include="Poco\LookupSearch.cs" />
+    <Compile Include="Poco\MailTemplate.cs" />
+    <Compile Include="Poco\MasterDataStatus.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Poco\Province.cs" />
+    <Compile Include="Poco\Question.cs" />
+    <Compile Include="Poco\Questionnaire.cs" />
+    <Compile Include="Poco\QuestionnaireReport.cs" />
+    <Compile Include="Poco\Ranging.cs" />
+    <Compile Include="Poco\RecipesItem.cs" />
+    <Compile Include="Poco\RecipesItemSearch.cs" />
+    <Compile Include="Poco\RecipesRequest.cs" />
+    <Compile Include="Poco\RecipesRequestSearch.cs" />
+    <Compile Include="Poco\Requester.cs" />
+    <Compile Include="Poco\RequesterStaging.cs" />
+    <Compile Include="Poco\Role.cs" />
+    <Compile Include="Poco\Supplier.cs" />
+    <Compile Include="Poco\SupplierMasterData.cs" />
+    <Compile Include="Poco\SupplierProduct.cs" />
+    <Compile Include="Poco\SupplierProductStaging.cs" />
+    <Compile Include="Poco\SupplierRequest.cs" />
+    <Compile Include="Poco\SupplierSearch.cs" />
+    <Compile Include="Poco\SupplierStaging.cs" />
+    <Compile Include="Poco\UnitOfMeasure.cs" />
+    <Compile Include="Poco\UnitOfMeasureType.cs" />
+    <Compile Include="Poco\User.cs" />
+    <Compile Include="Poco\VideoAudit.cs" />
+    <Compile Include="Poco\Videos.cs" />
+    <Compile Include="ViewModels\Menu.cs" />
+    <Compile Include="ViewModels\StandingDrySearchVM.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Fakes Include="Fakes\System.Web.Mvc.fakes" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

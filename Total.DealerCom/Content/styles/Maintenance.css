@@ -1,0 +1,50 @@
+﻿.divider
+{
+  border-top: #FDC3D2 1px solid;
+  border-bottom: #FDC3D2 1px solid;
+  border-right: #FDC3D2 1px solid;
+  border-left: #FDC3D2 1px solid;
+  background-color: #FDC3D2;
+}
+
+td.left
+{
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 11px;
+    FONT-FAMILY: verdana,tahoma,sans-serif;
+}
+
+td.space
+{
+    BACKGROUND-COLOR: #FDC3D2;
+}
+
+td.title
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11px;
+    FONT-FAMILY: verdana,tahoma,sans-serif;
+}
+
+td.pagenav
+{
+    BACKGROUND-COLOR: #FDC3D2;
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 11px;
+    FONT-FAMILY: verdana,tahoma,sans-serif;
+    FONT-WEIGHT:bold;
+}
+
+input[type=text]
+{
+  width:250px;
+}
+
+.button
+{
+    background: #FDC3D2;
+    color:Black;
+    border-color:#FDC3D2;
+    border-width:1px;
+  
+}
